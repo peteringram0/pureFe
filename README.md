@@ -5,7 +5,7 @@ using the latest front end tech & techniques. Simple to use & modify plus really
 
 ![alt tag](https://media0.giphy.com/media/DgLsbUL7SG3kI/giphy.gif)]
 
-### Features
+## Features
 
 * ES6
 * Stylus (With autoprefixer)
@@ -13,7 +13,8 @@ using the latest front end tech & techniques. Simple to use & modify plus really
 * Simple bash build & watch process (Easy to modify & very fast)
 * Long term caching
 
-#### Development Watch
+
+### Development Watch
 ````javascript
 $ yarn install
 $ yarn run watch
