@@ -1,0 +1,12 @@
+node_modules
+workspace.xml
+.idea
+/yarn-error.log
+public
+dist
+
+.idea/misc.xml
+.idea/modules.xml
+.idea/pureFe.iml
+.idea/vcs.xml
+.idea/watcherTask.xml

@@ -1,0 +1,21 @@
+# top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+spaces_around_brackets = outside
+indent_style = space
+indent_size = 4
+quote_type = single
+
+[*.{js,html,css,styl,scss,sass}]
+curly_bracket_next_line = false
+
+[*.php]
+curly_bracket_next_line = true
+
+[*.md]
+indent_style = space
