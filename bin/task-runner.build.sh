@@ -23,7 +23,7 @@ if [ ${NODE_ENV} = "development" ]; then
     pug --out $OUTPUT src/*.pug --pretty
 
     # Inject scripts and styles into our index.html file
-    html-dist --config html-dist.config.js --input $OUTPUT/*.html --jsFile "bundle.js" --cssFile "styles.css"
+    html-dist --config ./html-dist.config.js --input $OUTPUT/*.html --jsFile "bundle.js" --cssFile "styles.css"
 
 fi
 
@@ -42,6 +42,6 @@ if [ ${NODE_ENV} = "production" ]; then
     pug --out $OUTPUT src/*.pug
 
     # Inject scripts and styles into our index.html file
-    html-dist --config html-dist.config.js --input $OUTPUT/*.html --jsFile "app."$uuid".js" --cssFile "styles."$uuid".css"
+    html-dist --config ./html-dist.config.js --input $OUTPUT/*.html --jsFile "app."$uuid".js" --cssFile "styles."$uuid".css"
 
 fi
