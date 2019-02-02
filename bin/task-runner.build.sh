@@ -14,7 +14,7 @@ if [ ${NODE_ENV} = "development" ]; then
     echo "Development Build"
 
     # Webpack
-    webpack --progress --hide-modules --config webpack.config.js $OUTPUT/bundle.js
+    webpack --progress --hide-modules --config webpack.config.js -o $OUTPUT/bundle.js
 
     # Stylus
     stylus ./src/styles/styles.styl --out $OUTPUT --include-css
@@ -33,7 +33,7 @@ if [ ${NODE_ENV} = "production" ]; then
     echo "Production Build"
 
     # Webpack
-    webpack --progress --hide-modules --config webpack.config.js "$OUTPUT/app."$uuid".js"
+    webpack --progress --hide-modules --config webpack.config.js -o "$OUTPUT/app."$uuid".js"
 
     # Stylus
     stylus ./src/styles/styles.styl -u autoprefixer-stylus --with "{ browsers: 'last 5 versions' }" --out "$OUTPUT/styles".$uuid".css" --compress --include-css

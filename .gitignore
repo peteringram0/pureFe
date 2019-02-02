@@ -10,3 +10,5 @@ dist
 .idea/pureFe.iml
 .idea/vcs.xml
 .idea/watcherTask.xml
+
+yarn.lock
